@@ -33,13 +33,13 @@ function oneColor() {
 
 function twoColor() {
 
-    if(conDecon === "red blue") {
+    if(conDecon === "red blue" || conDecon === "blue red") {
         console.log("You constructed the color Purple")
     }
-    else if(conDecon === "red yellow") {
+    else if(conDecon === "red yellow" || conDecon === "yellow red") {
         console.log("You constructed the color Orange")
     }
-    else if(conDecon === "blue yellow") {
+    else if(conDecon === "blue yellow" || conDecon === "yellow blue") {
         console.log("You constructed the color Green")
     }
     else {

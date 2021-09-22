@@ -19,13 +19,13 @@ function twoColors() {
     const twoColors1 = prompt("Please pick your first color (red, yellow, blue): ")
     const twoColors2 = prompt("Please pick your second color (red, yellow, blue): ")
 
-    if(twoColors1 === "red" && twoColors2 === "blue") {
+    if(twoColors1 === "red" && twoColors2 === "blue" || twoColors1 === "blue" && twoColors2 === "red") {
         console.log("You constructed the color Purple")
     }
-    else if(twoColors1 === "red" && twoColors2 === "yellow") {
+    else if(twoColors1 === "red" && twoColors2 === "yellow" || twoColors1 === "yellow" && twoColors2 === "red") {
         console.log("You constructed the color Orange")
     }
-    else if(twoColors1 === "blue" && twoColors2 === "yellow") {
+    else if(twoColors1 === "blue" && twoColors2 === "yellow" || twoColors1 === "yellow" && twoColors2 === "blue") {
         console.log("You constructed the color Green")
     }
     else {
