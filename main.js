@@ -16,15 +16,16 @@ if(conDecon === "deconstruct") {
 
 function twoColors() {
 
-    const twoColors = prompt("Please pick a color combination (red + blue, red + yellow, blue + yellow): ")
+    const twoColors1 = prompt("Please pick your first color (red, yellow, blue): ")
+    const twoColors2 = prompt("Please pick your second color (red, yellow, blue): ")
 
-    if(twoColors === "red + blue") {
+    if(twoColors1 === "red" && twoColors2 === "blue") {
         console.log("You constructed the color Purple")
     }
-    else if(twoColors === "red + yellow") {
+    else if(twoColors1 === "red" && twoColors2 === "yellow") {
         console.log("You constructed the color Orange")
     }
-    else if(twoColors === "blue + yellow") {
+    else if(twoColors1 === "blue" && twoColors2 === "yellow") {
         console.log("You constructed the color Green")
     }
     else {
@@ -49,5 +50,5 @@ function oneColor() {
     else {
         console.log("Error!")
     }
-    
+
 }
