@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')()
 
-const conDecon = prompt("Please choose a single color (purple, orange, green) OR please choose a color comination (red + blue, red + yellow, blue + yellow): ")
+const conDecon = prompt("Please choose a single color (purple, orange, green) OR please choose a color comination (red blue, red yellow, blue yellow): ")
 
 if(conDecon === "purple" || conDecon === "orange" || conDecon === "green") {
 
@@ -8,7 +8,7 @@ if(conDecon === "purple" || conDecon === "orange" || conDecon === "green") {
 
 }
 
-if(conDecon === "red + blue" || conDecon === "red + yellow" || conDecon === "blue + yellow") {
+if(conDecon === "red blue" || conDecon === "red yellow" || conDecon === "blue yellow") {
 
     twoColor()
 
@@ -33,17 +33,17 @@ function oneColor() {
 
 function twoColor() {
 
-    if(conDecon === "red + blue") {
+    if(conDecon === "red blue") {
         console.log("You constructed the color Purple")
     }
-    else if(conDecon === "red + yellow") {
+    else if(conDecon === "red yellow") {
         console.log("You constructed the color Orange")
     }
-    else if(conDecon === "blue + yellow") {
+    else if(conDecon === "blue yellow") {
         console.log("You constructed the color Green")
     }
     else {
         console.log("Error!")
     }
-    
+
 }
