@@ -4,6 +4,18 @@ const conDecon = prompt("Do you want to Construct a color or Deconstruct a color
 
 if(conDecon === "construct") {
 
+    twoColors()
+
+}
+
+if(conDecon === "deconstruct") {
+
+    oneColor()
+
+}
+
+function twoColors() {
+
     const twoColors = prompt("Please pick a color combination (red + blue, red + yellow, blue + yellow): ")
 
     if(twoColors === "red + blue") {
@@ -21,7 +33,7 @@ if(conDecon === "construct") {
 
 }
 
-if(conDecon === "deconstruct") {
+function oneColor() {
 
     const oneColor = prompt("Please pick a color (Purple, Orange, Green): ")
 
@@ -37,5 +49,5 @@ if(conDecon === "deconstruct") {
     else {
         console.log("Error!")
     }
-
+    
 }

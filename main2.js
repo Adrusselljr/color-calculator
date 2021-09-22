@@ -4,6 +4,18 @@ const conDecon = prompt("Please choose a single color (purple, orange, green) OR
 
 if(conDecon === "purple" || conDecon === "orange" || conDecon === "green") {
 
+    oneColor()
+
+}
+
+if(conDecon === "red + blue" || conDecon === "red + yellow" || conDecon === "blue + yellow") {
+
+    twoColor()
+
+}
+
+function oneColor() {
+
     if(conDecon === "purple") {
         console.log("You deconstructed the color Purple into red + blue")
     }
@@ -19,7 +31,7 @@ if(conDecon === "purple" || conDecon === "orange" || conDecon === "green") {
 
 }
 
-if(conDecon === "red + blue" || conDecon === "red + yellow" || conDecon === "blue + yellow") {
+function twoColor() {
 
     if(conDecon === "red + blue") {
         console.log("You constructed the color Purple")
@@ -33,5 +45,5 @@ if(conDecon === "red + blue" || conDecon === "red + yellow" || conDecon === "blu
     else {
         console.log("Error!")
     }
-
+    
 }
